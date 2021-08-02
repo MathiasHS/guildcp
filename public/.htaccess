@@ -1,0 +1,12 @@
+RewriteEngine on
+RewriteRule ^(privacy-policy|main|about|404)$ /index.php?page=$1 [L]
+RewriteRule ^((register-guild)/(.*))$ $2.php?guild=$3 [L]
+RewriteRule ^((register-for-guild)/(.*))$ $2.php?guild=$3 [L]
+RewriteRule ^((apply-for-guild)/(.*))$ $2.php?data=$3 [L]
+RewriteRule ^((u|user)/(.*)/(characters|guilds))$ /u.php?name=$3&view=$4
+RewriteRule ^((u|user)/(.*))$ /u.php?name=$3
+RewriteRule ^((g|guild)/(.*)/(roster|info))$ /g.php?data=$3&view=$4
+RewriteRule ^((g|guild)/(.*))$ /g.php?data=$3
+RewriteRule ^((find-guild)/(.*))$ $2.php?data=$3 [L]
+RewriteRule ^(find-guild)$ $1.php
+ErrorDocument 404 /index.php?page=404

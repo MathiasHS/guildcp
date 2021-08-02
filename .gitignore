@@ -1,0 +1,4 @@
+vendor/
+out/
+.vscode/
+docker-compose.yml

@@ -1,0 +1,286 @@
+* {
+  padding: 0;
+  margin: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.95em;
+  background-image: url("../images/bg-gray-1920.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 2.0rem;
+}
+
+/* .navbar{
+  padding: 0;
+  padding-left: 1rem;
+  
+  #toggle knappen på mobil, få den sentrert
+
+} */
+
+
+/* Bruk rundt alt innhold på sider som ikke fyller 100% av siden for å få footer på bunn */
+.content {
+  min-height: calc(76vh - 78px);
+}
+
+.footer {
+  height: 50px;
+}
+
+#login-wrapper {
+  width: 350px;
+}
+
+#login-wrapper form .form-group label {
+  font-size: 1.2em;
+}
+
+#text-start {
+  text-align: start;
+}
+
+#center-div {
+  top:50%;
+  left:50%;
+  padding:15px;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.submenu-mobile-toggle {
+  display: none;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  padding: 1rem;
+  background-color: #585454;
+  text-align: center;
+}
+
+/* The hero image */
+.hero-image {
+  background-image: linear-gradient(rgba(248, 248, 248, 0.5), rgba(223, 217, 217, 0.096)), url("https://i.pinimg.com/originals/a0/09/84/a009841fe4b23bd268d760cd3d969dd1.jpg");
+  height: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.find-guild-image {
+  background-image: linear-gradient(rgba(248, 248, 248, 0.5), rgba(223, 217, 217, 0.096)), url("/include/images/world-of-warcraft-battle-for-azeroth-10200x4320-artwork-4k-8k-11132.jpg");
+  height: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.about-image {
+  background-image: linear-gradient(rgba(248, 248, 248, 0.5), rgba(223, 217, 217, 0.096)), url("https://www.seekpng.com/png/full/76-767601_world-of-warcraft-banner.png");
+  height: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.user-banner-img {
+  /* TODO: Make the image go furter down, so you can see the face */
+  background-image: linear-gradient(rgba(248, 248, 248, 0.5), rgba(223, 217, 217, 0.096)), url("/include/images/ATsqwEf.jpg");
+  height: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+  
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Guild boxes */
+.box {
+  display: flex;
+}
+
+
+/* Pushes content to the right */
+.push {
+  margin-left: auto;
+}
+
+.hero-image2 {
+  height: 10%;
+  position: relative;
+}
+
+/* CSS for ul.li */
+a#home-tab.nav-link {
+  color: #fff;
+  background-color: #343a40;
+}
+
+a#profile-link.nav-link {
+  color: #fff;
+}
+
+
+/* Form validation */
+input:invalid {
+  border: 2px dashed red;
+}
+
+input:valid {
+  border: 2px solid black;
+}
+
+.underline {
+  border-bottom: 1px solid #dee2e6;
+}
+
+
+/* Front page */
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.submenu_icon_surround {
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  transition: .5s;
+}
+
+.cookiealert {
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 500ms ease-out;
+  width: 100%;
+  margin: 0 !important;
+  border-radius: 0;
+  color: #ecf0f1;
+}
+
+.cookiealert.show {
+  transform: translateY(0%);
+  transition-delay: 1000ms;
+  opacity: 1;
+}
+
+.cookiealert a {
+  text-decoration: underline
+}
+
+.cookiealert .acceptcookies {
+  vertical-align: baseline;
+  margin-left: 10px;
+}
+
+/* Media queries */
+@media all and (min-width:321px) and (max-width: 480px) {
+  .mobile-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .submenu-mobile-toggle {
+    display: block;
+  }
+
+  .submenu_icon_surround {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  #login-wrapper {
+    width: inherit;
+  }
+}
+
+@media (max-width: 320px) {
+  .box {
+    display: inherit;
+  }
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('../images/11136.jpg') black no-repeat center center scroll;
+  }
+
+  header video {
+    display: none;
+  }
+}
+

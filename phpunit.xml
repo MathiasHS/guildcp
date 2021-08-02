@@ -1,0 +1,18 @@
+<phpunit bootstrap="vendor/autoload.php" 
+verbose="true" 
+stopOnError="false" 
+stopOnFailure="false">
+  <testsuites>
+    <testsuite name="guildcp">
+      <directory>tests</directory>
+    </testsuite>
+  </testsuites>
+  <php>
+    <env name="GCP_MYSQL_HOSTNAME" value=""/>
+    <env name="GCP_MYSQL_USERNAME" value=""/>
+    <env name="GCP_MYSQL_PASSWORD" value=""/>
+    <env name="GCP_MYSQL_DATABASE" value=""/>
+    <env name="GCP_CLIENT_ID" value=""/>
+    <env name="GCP_CLIENT_SECRET" value=""/>
+  </php>
+</phpunit>
