@@ -8,6 +8,7 @@ Because this is a university project, there were certain limitations. We were fo
 
 ## Credits
 ``` 
+https://github.com/sondrekje - Project member
 https://github.com/andreasvannebo - Project member
 https://github.com/datamus - Project member
 https://github.com/walomzki - Project member
